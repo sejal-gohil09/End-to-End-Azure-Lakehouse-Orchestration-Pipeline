@@ -1,0 +1,14 @@
+# Exclude raw data and large binaries
+data/bronze/*
+data/silver/*
+data/gold/*
+*.csv
+*.parquet
+*.zip
+*.tar.gz
+
+# Keep folder structure intact on GitHub
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+!data/bronze/sample_nhs_data.csv

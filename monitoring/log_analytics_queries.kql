@@ -1,0 +1,4 @@
+AzureDiagnostics
+| where ResourceProvider in ("MICROSOFT.DATABRICKS", "MICROSOFT.DATAFACTORY")
+| where status_s == "Failed"
+| project TimeGenerated, Resource, OperationName, status_s, ErrorMessage_s;
